@@ -1,0 +1,18 @@
+[0;1;32m●[0m bme280-dashboard.service - BME280 Flask Dashboard
+     Loaded: loaded (]8;;file://springer/etc/systemd/system/bme280-dashboard.service\/etc/systemd/system/bme280-dashboard.service]8;;\; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Mon 2025-12-29 18:53:27 EET; 8s ago
+ Invocation: 3e5415cc69ee429193c1aa8e84da8543
+   Main PID: 1537 (python)
+      Tasks: 2[0;38;5;245m (limit: 171)[0m
+        CPU: 1.240s
+     CGroup: /system.slice/bme280-dashboard.service
+             └─[0;38;5;245m1537 /home/yoghurt/myenv/bin/python /home/yoghurt/Project/project.py[0m
+
+Dec 29 18:53:27 springer systemd[1]: Started bme280-dashboard.service - BME280 Flask Dashboard.
+Dec 29 18:53:28 springer python[1537]:  * Serving Flask app 'project'
+Dec 29 18:53:28 springer python[1537]:  * Debug mode: off
+Dec 29 18:53:28 springer python[1537]: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+Dec 29 18:53:28 springer python[1537]:  * Running on all addresses (0.0.0.0)
+Dec 29 18:53:28 springer python[1537]:  * Running on http://127.0.0.1:5000
+Dec 29 18:53:28 springer python[1537]:  * Running on http://10.10.38.147:5000
+Dec 29 18:53:28 springer python[1537]: Press CTRL+C to quit
