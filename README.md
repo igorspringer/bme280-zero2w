@@ -433,3 +433,21 @@ import json
     time.sleep(30)
 ```
 
+
+/etc/systemd/system/bme280-dashboard.service
+
+[Unit]
+Description=BME280 Flask Dashboard
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=yoghurt
+WorkingDirectory=/home/yoghurt/Project
+ExecStart=/home/yoghurt/myenv/bin/gunicorn -w 1 -b 0.0.0.0:5000 project:app
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
