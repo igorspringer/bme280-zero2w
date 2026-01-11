@@ -1,5 +1,7 @@
 myen/
 venv/
+bme280.db
+__pycache__
 __pycache__/
 *.pyc
 .env
